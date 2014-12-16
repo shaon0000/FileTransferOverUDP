@@ -1,0 +1,25 @@
+Basic Information:
+A file is sent from Sender application to the Receiver application reliably over UDP. The nem application can be used to emulate packet drops.
+
+how to run:
+./nEmulator <parameters>
+java Sender <parameters>
+java Receiver <parameters>
+
+
+machines tested on:
+network emulator ubuntu1204-002
+Receiver ubuntu1204-006
+Sender ubuntu1204-004
+
+Additional Information:
+There is a convenient bash script file called net.sh.
+The script assumes the script will be executed on the right
+machine based on the information under "machines tested on"
+
+You could modify the script file to change that up. A more simple
+approach is to make everything localhost
+
+"./net.sh nem" starts the emulator
+"./net.sh send" starts the Sender
+"./net.sh recv" starts the Receiver
